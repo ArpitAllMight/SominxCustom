@@ -201,9 +201,11 @@
 
     #testimonials .container {
         flex-wrap: wrap;
+        flex-direction: column-reverse;
         gap: 0;
         height: -webkit-fill-available;
         padding: 50px 50px;
+        margin-top: 20px;
     }
 
     #testimonials #mileStone {
