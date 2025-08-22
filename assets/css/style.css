@@ -329,7 +329,7 @@ header .subNav li a:hover {
 }
 
 #mainSlider #slider1 {
-    background-image: url(../assets/webp/homepage/job-5382501_1920.webp);
+    background-image: url(../webp/homepage/job-5382501_1920.webp);
     background-position: top;
 }
 
@@ -1956,4 +1956,5 @@ footer .footerBottom {
     border-radius: 50%;
 
 }
+
 
