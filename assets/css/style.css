@@ -334,15 +334,15 @@ header .subNav li a:hover {
 }
 
 #mainSlider #slider2 {
-    background-image: url(/assets/webp/homepage/chairs-2181960_1920.webp);
+    background-image: url(../webp/homepage/chairs-2181960_1920.webp);
 }
 
 #mainSlider #slider3 {
-    background-image: url(/assets/webp/homepage/office-2360063_1920.webp);
+    background-image: url(../webp/homepage/office-2360063_1920.webp);
 }
 
 #mainSlider #slider4 {
-    background-image: url(/assets/webp/homepage/meeting-2284501_1920.webp);
+    background-image: url(../webp/homepage/meeting-2284501_1920.webp);
 }
 
 #mainSlider .content {
@@ -472,7 +472,7 @@ header .subNav li a:hover {
 #bestServices .bgContainer:nth-child(2) {
     height: 100vh;
     width: 30%;
-    background-image: url(/assets/webp/homepage/1155.webp);
+    background-image: url(../webp/homepage/1155.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -516,7 +516,7 @@ header .subNav li a:hover {
 }
 
 #bestServices .contentWrapper .container:nth-child(2) {
-    background-image: url(/assets/webp/homepage/2147955151.webp);
+    background-image: url(../webp/homepage/2147955151.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -741,7 +741,7 @@ header .subNav li a:hover {
 
 #discover .container {
     height: 100vh;
-    background-image: url(/assets/webp/homepage/office-932926_1920.webp);
+    background-image: url(../webp/homepage/office-932926_1920.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -911,7 +911,7 @@ header .subNav li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/webp/homepage/4954.webp);
+    background-image: url(../webp/homepage/4954.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1152,15 +1152,15 @@ header .subNav li a:hover {
 }
 
 #trust #bgIMG1 {
-    background-image: url(/assets/webp/homepage/2148499904.webp);
+    background-image: url(../webp/homepage/2148499904.webp);
 }
 
 #trust #bgIMG2 {
-    background-image: url(/assets/webp/homepage/2147899972.webp);
+    background-image: url(../webp/homepage/2147899972.webp);
 }
 
 #trust #bgIMG3 {
-    background-image: url(/assets/webp/homepage/2147668845.webp);
+    background-image: url(../webp/homepage/2147668845.webp);
 }
 
 #trust .column {
@@ -1213,7 +1213,7 @@ header .subNav li a:hover {
 
 #testimonials .container {
     height: 100vh;
-    background-image: url(/assets/webp/homepage/2148908920.webp);
+    background-image: url(../webp/homepage/2148908920.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1360,51 +1360,51 @@ header .subNav li a:hover {
 }
 
 #showcaseSlider #showcase1 {
-    background-image: url(/assets/webp/homepage/2147727615.webp);
+    background-image: url(../webp/homepage/2147727615.webp);
 }
 
 #showcaseSlider #showcase2 {
-    background-image: url(/assets/webp/homepage/25417.webp);
+    background-image: url(../webp/homepage/25417.webp);
 }
 
 #showcaseSlider #showcase3 {
-    background-image: url(/assets/webp/homepage/2150966143.webp);
+    background-image: url(../webp/homepage/2150966143.webp);
 }
 
 #showcaseSlider #showcase4 {
-    background-image: url(/assets/webp/homepage/2150167402.webp);
+    background-image: url(../webp/homepage/2150167402.webp);
 }
 
 #showcaseSlider #showcase5 {
-    background-image: url(/assets/webp/homepage/1996.webp);
+    background-image: url(../webp/homepage/1996.webp);
 }
 
 #showcaseSlider #showcase6 {
-    background-image: url(/assets/webp/homepage/2149739303.webp);
+    background-image: url(../webp/homepage/2149739303.webp);
 }
 
 #showcaseSlider #showcase7 {
-    background-image: url(/assets/webp/homepage/2147727613.webp);
+    background-image: url(../webp/homepage/2147727613.webp);
 }
 
 #showcaseSlider #showcase8 {
-    background-image: url(/assets/webp/homepage/15591.webp);
+    background-image: url(../webp/homepage/15591.webp);
 }
 
 #showcaseSlider #showcase9 {
-    background-image: url(/assets/webp/homepage/9771.webp);
+    background-image: url(../webp/homepage/9771.webp);
 }
 
 #showcaseSlider #showcase10 {
-    background-image: url(/assets/webp/homepage/147378.webp);
+    background-image: url(../webp/homepage/147378.webp);
 }
 
 #showcaseSlider #showcase11 {
-    background-image: url(/assets/webp/homepage/79485.webp);
+    background-image: url(../webp/homepage/79485.webp);
 }
 
 #showcaseSlider #showcase12 {
-    background-image: url(/assets/webp/homepage/1700.webp);
+    background-image: url(../webp/homepage/1700.webp);
 }
 
 #showcaseSlider {
@@ -1685,43 +1685,43 @@ header .subNav li a:hover {
 }
 
 #news #img1 {
-    background-image: url(/assets/webp/homepage/2147707806.webp);
+    background-image: url(../webp/homepage/2147707806.webp);
 }
 
 #news #img2 {
-    background-image: url(/assets/webp/homepage/15818.webp);
+    background-image: url(../webp/homepage/15818.webp);
 }
 
 #news #img3 {
-    background-image: url(/assets/webp/homepage/15773.webp);
+    background-image: url(../webp/homepage/15773.webp);
 }
 
 #news #img4 {
-    background-image: url(/assets/webp/homepage/2147656742.webp);
+    background-image: url(../webp/homepage/2147656742.webp);
 }
 
 #news #img5 {
-    background-image: url(/assets/webp/homepage/2148908921.webp);
+    background-image: url(../webp/homepage/2148908921.webp);
 }
 
 #news #img6 {
-    background-image: url(/assets/webp/homepage/5209.webp);
+    background-image: url(../webp/homepage/5209.webp);
 }
 
 #news #img7 {
-    background-image: url(/assets/webp/homepage/104681.webp);
+    background-image: url(../webp/homepage/104681.webp);
 }
 
 #news #img8 {
-    background-image: url(/assets/webp/homepage/13569.webp);
+    background-image: url(../webp/homepage/13569.webp);
 }
 
 #news #img9 {
-    background-image: url(/assets/webp/homepage/2148985498.webp);
+    background-image: url(../webp/homepage/2148985498.webp);
 }
 
 #news #img10 {
-    background-image: url(/assets/webp/homepage/2149300711.webp);
+    background-image: url(../webp/homepage/2149300711.webp);
 }
 
 #news .image {
@@ -1954,7 +1954,4 @@ footer .footerBottom {
     display: block;
     color: var(--red-color);
     border-radius: 50%;
-
 }
-
-
