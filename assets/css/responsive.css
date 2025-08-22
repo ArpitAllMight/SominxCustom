@@ -1,0 +1,619 @@
+@media (max-width: 1281px) {
+    #showcaseSlider .sliderLink {
+        flex: 0 0 24.1%;
+    }
+}
+
+@media (max-width: 1025px) {
+    header {
+        background: var(--black-color);
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    .headerNav {
+        display: none;
+    }
+
+    #responsiveNav {
+        display: block;
+        position: absolute;
+        top: 71px;
+        left: 100%;
+        width: 100%;
+        font-size: 15px;
+        background: var(--black-color);
+        height: 100vh;
+        z-index: 1;
+        transition: 0.3s all ease;
+    }
+
+    #responsiveNav.open {
+        left: 0;
+    }
+
+    #responsiveNav span {
+        cursor: pointer;
+    }
+
+    #responsiveNav ul li a,
+    #responsiveNav ul li span {
+        display: flex;
+        align-items: center;
+        background: var(--black-color);
+        color: var(--white-color);
+        padding: 15px 15px 15px 25px;
+        border-bottom: 1px solid grey;
+        transition: 0.5s all ease;
+    }
+
+    #responsiveNav ul li a:hover,
+    #responsiveNav ul li span:hover {
+        padding: 15px 15px 15px 35px;
+    }
+
+    #responsiveNav .link:active,
+    #responsiveNav .dropdown span:active,
+    #responsiveNav .link:hover,
+    #responsiveNav .dropdown span:hover {
+        color: var(--red-color);
+    }
+
+    #responsiveNav .dropdown span i {
+        display: inline-block;
+        margin-left: 3px;
+        color: var(--red-color);
+        transition: transform 0.3s ease;
+    }
+
+    #responsiveNav .dropdown.open span i {
+        transform: rotate(180deg);
+    }
+
+    #responsiveNav .subNavigation {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    #responsiveNav .subNavigation.open {
+        max-height: 500px;
+        /* Adjust based on content */
+    }
+
+    #responsiveNav .subNavLink {
+        cursor: pointer;
+        background: lightgrey;
+        color: var(--black-color);
+    }
+
+    #responsiveNav .subNavLink:active {
+        text-decoration: underline;
+    }
+
+    header .container:nth-child(2) {
+        display: none;
+    }
+
+    body.open {
+        overflow: hidden;
+    }
+
+    #bestServices .contentWrapper .container:nth-child(1) {
+        width: 100%;
+        padding: 50px;
+        background: var(--white-color);
+    }
+
+    #bestServices .bgIMG {
+        display: none;
+    }
+
+    #bestServices .contentWrapper .container:nth-child(2) {
+        height: 400px;
+        width: 400px;
+        box-shadow: 5px 5px lightgrey;
+        border: 2px solid red;
+    }
+
+    #bestServices .wrapperForContainer {
+        display: none;
+    }
+
+    #bestServices .contentWrapper {
+        gap: 0;
+        position: static;
+        top: 0;
+        transform: none;
+    }
+
+    #bestServices .projectWrap {
+        padding: 25px 30px;
+    }
+
+    #serviceList {
+        gap: 40px;
+        padding-bottom: 0px;
+    }
+
+    #serviceList .box {
+        width: auto;
+        flex: 1 1 35%;
+    }
+
+    #serviceList .box h5 {
+        font-weight: 600;
+    }
+
+    #solution {
+        padding: 70px;
+    }
+
+    #solution .container {
+        max-width: 100%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    #solution .box {
+        width: 360px;
+    }
+
+    #solution .btn {
+        text-align: end;
+    }
+
+    #growth {
+        height: -webkit-fill-available;
+        padding: 50px 50px;
+    }
+
+    #growth .container {
+        flex-wrap: wrap;
+    }
+
+    #growth .column {
+        width: 100%;
+    }
+
+    #growth .column:nth-child(2) {
+        width: 100%;
+    }
+
+    #growth .chartContainer {
+        justify-content: end;
+    }
+
+    #strategy .container {
+        gap: 30px;
+        width: 100%;
+    }
+
+    #trust {
+        padding: 50px 0;
+    }
+
+    #testimonials #testimonial {
+        width: 100%;
+    }
+
+    #testimonials .container {
+        flex-wrap: wrap;
+        gap: 0;
+        height: -webkit-fill-available;
+        padding: 50px 50px;
+    }
+
+    #testimonials #mileStone {
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #showcaseSlider .sliderLink {
+        flex: 0 0 32.3%;
+    }
+
+    #news .blogTitle {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #news {
+        padding-bottom: 0px;
+    }
+
+    footer {
+        padding: 0px 4%;
+    }
+}
+
+@media (max-width: 1000px) {
+    footer {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    #mainSlider .content h6 {
+        font-size: 35px;
+    }
+
+    #mainSlider .content p {
+        font-size: 20px;
+    }
+
+    #mainSlider button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+
+    #mainSlider .btn {
+        margin-top: 0;
+    }
+
+    #serviceList {
+        padding: 50px 20px 0px 20px;
+    }
+
+    #serviceList .box a {
+        padding: 30px;
+    }
+
+    #discover {
+        padding: 20px;
+    }
+
+    #discover .box {
+        width: 90%;
+    }
+
+    #videoPlayer iframe {
+        width: 530px;
+        height: 400px;
+    }
+
+    #videoPlayer #closeVideo {
+        bottom: 10%;
+    }
+
+    #solution {
+        padding: 40px 20px;
+    }
+
+    #solution .container {
+        gap: 35px;
+    }
+
+    #strategy {
+        height: 55vh;
+    }
+
+    #showcaseSlider .sliderLink {
+        flex: 0 0 49%;
+    }
+
+    #testimonials {
+        padding: 0px;
+    }
+
+    #testimonials .container {
+        padding: 50px 20px;
+    }
+
+    footer .logo {
+        width: 110px;
+    }
+
+    footer .contact {
+        gap: 20px;
+        flex-direction: column-reverse;
+        align-items: end;
+    }
+
+    footer .contact p {
+        line-height: 30px;
+    }
+
+    footer .container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer .column.one {
+        width: 200px;
+    }
+
+    footer li.checkbox {
+        align-items: baseline;
+    }
+
+    footer .checkbox a {
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    #logo {
+        width: 50px;
+    }
+
+    #hamburger {
+        padding: 7px;
+    }
+
+    #responsiveNav {
+        top: 51px;
+    }
+
+    #mainSlider {
+        height: 50vh;
+        margin-top: 51px;
+    }
+
+    #mainSlider .sliderContainer {
+        height: 50vh;
+    }
+
+    #mainSlider .slider {
+        height: 50vh;
+    }
+
+    #mainSlider .sliderPagination {
+        bottom: 14px;
+    }
+
+    #mainSlider .content {
+        padding: 30px 30px;
+        margin-top: 0px;
+    }
+
+    #mainSlider .content p {
+        font-size: 15px;
+    }
+
+    #mainSlider .content h6 {
+        font-size: 25px;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    #bestServices .contentWrapper .container:nth-child(1) {
+        padding: 30px 20px;
+    }
+
+    #bestServices h1 {
+        font-size: 40px;
+    }
+
+    #bestServices .text {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #bestServices .contentWrapper .container:nth-child(2) {
+        height: 388px;
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    #bestServices .projects {
+        font-weight: 600;
+    }
+
+    #bestServices p.projectHeading {
+        font-weight: 500;
+    }
+
+    #serviceList h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #serviceList {
+        gap: 30px;
+    }
+
+    #serviceList .box {
+        flex: 1 1 100%;
+    }
+
+    #serviceList .box h5 {
+        font-size: 25px;
+    }
+
+    #discover {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    #discover .container {
+        height: fit-content;
+        padding: 30px 0;
+    }
+
+    #discover .box {
+        padding: 20px 20px;
+    }
+
+    #discover .box h2 {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
+    #videoPlayer iframe {
+        width: 90%;
+        height: 180px;
+    }
+
+    #videoPlayer #closeVideo {
+        bottom: 15px;
+    }
+
+    #solution .row h3 {
+        font-size: 30px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    #solution .box {
+        width: 94%;
+    }
+
+    #growth {
+        padding: 50px 20px;
+    }
+
+    #growth h4.heading {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    #growth .chartContainer {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    #accordion .title {
+        padding: 20px;
+    }
+
+    #accordion .content.active {
+        padding: 0 20px 20px;
+    }
+
+    #strategy {
+        height: fit-content;
+        padding: 50px 0;
+    }
+
+    #strategy .container {
+        gap: 20px;
+    }
+
+    #strategy .content {
+        width: 75%;
+        gap: 15px;
+    }
+
+    #strategy i {
+        font-size: 50px;
+    }
+
+    #strategy h6 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #trust .column {
+        width: 90%;
+    }
+
+    #testimonials .container {
+        padding: 25px 0;
+    }
+
+    #testimonial .box .text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #testimonial .box .title {
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+
+    #showcase h3 {
+        font-size: 40px;
+    }
+
+    #showcaseSlider .sliderLink {
+        flex: 0 0 100.1%;
+    }
+
+    #showcaseSlider .box .post {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    #showcase {
+        padding-bottom: 30px;
+    }
+
+    #news h4 {
+        font-size: 40px;
+    }
+
+    footer {
+        padding: 0px 7%;
+    }
+
+    footer .footerHead {
+        align-items: flex-start;
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    footer .contact {
+        gap: 25px;
+    }
+
+    footer .contact p {
+        line-height: 35px;
+    }
+
+    .footerBottom p {
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    #mainSlider .content p {
+        align-items: flex-start;
+    }
+
+    #bestServices h1 {
+        font-size: 35px;
+    }
+
+    #serviceList .box a {
+        padding: 25px;
+    }
+
+    #serviceList .box h5 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    #serviceList .box a {
+        gap: 8px;
+    }
+
+    #solution .row h3 {
+        font-size: 25px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    #solution .box {
+        padding: 30px;
+    }
+
+    #strategy .content {
+        width: 90%;
+    }
+
+    footer {
+        padding: 0px 5%;
+    }
+
+    footer .column.one {
+        width: 100%;
+    }
+}
