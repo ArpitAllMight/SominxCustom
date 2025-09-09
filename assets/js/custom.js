@@ -269,15 +269,16 @@ document.addEventListener("DOMContentLoaded", function () {
             this.isDragging = false;
             this.hasMoved = false;
             this.startX = 0;
+            this.startY = 0;
             this.currentX = 0;
             this.initialTransform = 0;
 
             // Layout metrics
             this.slideWidth = 0;
             this.gap = 0;
-            this.visibleCount = 1;     // how many cards visible at once
-            this.lastStartIndex = 0;   // max index you can start from
-            this.maxScroll = 0;        // track.scrollWidth - slider.clientWidth
+            this.visibleCount = 1;
+            this.lastStartIndex = 0;
+            this.maxScroll = 0;
 
             this.measure();
             this.buildDots();
@@ -298,32 +299,27 @@ document.addEventListener("DOMContentLoaded", function () {
             this.slideWidth = s0.offsetWidth + marginLeft + marginRight;
             const totalCard = this.slideWidth + this.gap;
 
-            // how many cards fit in the viewport
             this.visibleCount = Math.max(
                 1,
                 Math.floor((this.slider.clientWidth + this.gap) / totalCard)
             );
 
-            // max index you can align on the left without exposing empty space
             this.lastStartIndex = Math.max(0, this.totalSlides - this.visibleCount);
-
-            // how far the track can scroll in px
             this.maxScroll = Math.max(0, this.track.scrollWidth - this.slider.clientWidth);
         }
 
         getCurrentTranslateX() {
             const t = getComputedStyle(this.track).transform;
             if (t && t !== 'none') {
-                // DOMMatrix works in all modern browsers
                 const m = new DOMMatrixReadOnly(t);
-                return m.m41; // current translateX (negative or 0)
+                return m.m41;
             }
             return 0;
         }
 
         buildDots() {
             this.dotsContainer.innerHTML = '';
-            this.groupSize = 4; // 4 slides per dot group (your original intent)
+            this.groupSize = 4;
             this.totalGroups = Math.ceil(this.totalSlides / this.groupSize);
 
             for (let i = 0; i < this.totalGroups; i++) {
@@ -344,7 +340,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         addEvents() {
-            // Drag
             this.track.addEventListener('mousedown', this.onDragStart.bind(this));
             this.track.addEventListener('touchstart', this.onDragStart.bind(this), { passive: true });
 
@@ -367,11 +362,10 @@ document.addEventListener("DOMContentLoaded", function () {
             this.hasMoved = false;
 
             this.startX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+            this.startY = e.type === 'mousedown' ? e.clientY : e.touches[0].clientY;
 
-            // ✅ start from the ACTUAL current transform, not from index*width
             this.initialTransform = this.getCurrentTranslateX();
 
-            // bounds for drag
             this.maxOffset = 0;
             this.minOffset = -this.maxScroll;
 
@@ -381,15 +375,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         onDragMove(e) {
             if (!this.isDragging) return;
-            e.preventDefault();
 
             this.currentX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
-            const diff = this.currentX - this.startX;
-            if (Math.abs(diff) > 5) this.hasMoved = true;
+            const currentY = e.type === 'mousemove' ? e.clientY : e.touches[0].clientY;
 
-            let newOffset = this.initialTransform + diff;
+            const diffX = this.currentX - this.startX;
+            const diffY = currentY - this.startY;
 
-            // ✅ edge bounce with resistance using TRUE bounds
+            // ✅ Only block vertical scroll if horizontal drag is stronger
+            if (Math.abs(diffX) > Math.abs(diffY)) {
+                e.preventDefault();
+            }
+
+            if (Math.abs(diffX) > 5) this.hasMoved = true;
+
+            let newOffset = this.initialTransform + diffX;
+
             if (newOffset > this.maxOffset) {
                 newOffset = this.maxOffset + (newOffset - this.maxOffset) * 0.25;
             } else if (newOffset < this.minOffset) {
@@ -414,13 +415,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const diff = (this.currentX || this.startX) - this.startX;
             const threshold = Math.max(80, this.slideWidth * 0.2);
 
-            // ✅ don’t go past the lastStartIndex
             if (diff > threshold && this.currentIndex > 0) {
                 this.prevSlide();
             } else if (diff < -threshold && this.currentIndex < this.lastStartIndex) {
                 this.nextSlide();
             } else {
-                // snap back (covers overscroll at edges)
                 this.goToSlide(this.currentIndex, true);
             }
         }
@@ -436,7 +435,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         goToSlide(index, animate = true) {
-            // clamp index so we never request a position beyond maxScroll
             this.currentIndex = Math.max(0, Math.min(index, this.lastStartIndex));
             this.translateTo(this.currentIndex, animate);
             this.updateDots();
@@ -463,6 +461,7 @@ document.addEventListener("DOMContentLoaded", function () {
             this.updateDots();
         }
     }
+
 
     function initializeShowcaseSlider() {
         const showcaseSliderElement = document.getElementById('showcaseSlider');
