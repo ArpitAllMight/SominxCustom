@@ -166,7 +166,7 @@
     }
 
     #growth {
-        height: -webkit-fill-available;
+        height: auto;
         padding: 50px 50px;
     }
 
@@ -619,3 +619,4 @@
         width: 100%;
     }
 }
+
