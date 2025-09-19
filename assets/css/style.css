@@ -28,6 +28,7 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 button {
@@ -391,8 +392,10 @@ header .subNav li a:hover {
 
 #mainSlider {
     position: relative;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    height: 100dvh; /* iOS Safari fix */
+    min-height: 100vh; /* Fallback */
 }
 
 #mainSlider .sliderContainer {
@@ -400,6 +403,8 @@ header .subNav li a:hover {
     position: relative;
     width: 100%;
     height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
 }
 
 #mainSlider .sliderTrack {
@@ -420,6 +425,8 @@ header .subNav li a:hover {
     width: 25%;
     /* Each slide takes 25% of track width */
     height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -454,6 +461,7 @@ header .subNav li a:hover {
 }
 
 #mainSlider .content {
+    background: rgba(0, 0, 0, 0.5); /* Fallback for backdrop-filter */
     -webkit-backdrop-filter: brightness(0.5);
             backdrop-filter: brightness(0.5);
     color: var(--white-color);
@@ -605,6 +613,8 @@ header .subNav li a:hover {
         -ms-flex-pack: center;
             justify-content: center;
     height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
 }
 
 #bestServices .bgContainer:nth-child(1) {
@@ -953,6 +963,8 @@ header .subNav li a:hover {
 
 #discover .container {
     height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
     background-image: url(../webp/homepage/office-932926_1920.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -970,6 +982,7 @@ header .subNav li a:hover {
 }
 
 #discover .box {
+    background: rgba(0, 0, 0, 0.5); /* Fallback */
     -webkit-backdrop-filter: brightness(0.5);
             backdrop-filter: brightness(0.5);
     color: white;
@@ -1171,6 +1184,8 @@ header .subNav li a:hover {
 
 #growth {
     height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;    
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1527,6 +1542,7 @@ header .subNav li a:hover {
     width: 0;
     height: 0;
     opacity: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fallback */
     -webkit-backdrop-filter: brightness(0.5);
             backdrop-filter: brightness(0.5);
     position: absolute;
@@ -1561,6 +1577,8 @@ header .subNav li a:hover {
 
 #testimonials .container {
     height: 100vh;
+    height: 100dvh;
+    min-height: 100vh;
     background-image: url(../webp/homepage/2148908920.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -1686,6 +1704,7 @@ header .subNav li a:hover {
             justify-content: center;
     gap: 30px;
     padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.2); /* Fallback */
     -webkit-backdrop-filter: brightness(0.8);
             backdrop-filter: brightness(0.8);
     -webkit-transition: 1s all ease;
@@ -1939,6 +1958,13 @@ header .subNav li a:hover {
 #showcaseSlider .sliderLink .box i,
 #showcaseSlider .sliderLink .box .post {
     color: var(--black-color);
+}
+
+#showcaseSlider .sliderLink,
+#testimonial .testimonial-track .box {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #showcaseSlider .box i {
@@ -2440,3 +2466,4 @@ footer .footerBottom {
     color: var(--red-color);
     border-radius: 50%;
 }
+
