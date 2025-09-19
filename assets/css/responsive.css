@@ -1,6 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1281px) {
     #showcaseSlider .sliderLink {
-        flex: 0 0 24.1%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 24.1%;
+                flex: 0 0 24.1%;
     }
 }
 
@@ -27,6 +36,8 @@
         background: var(--black-color);
         height: 100vh;
         z-index: 1;
+        -webkit-transition: 0.3s all ease;
+        -o-transition: 0.3s all ease;
         transition: 0.3s all ease;
     }
 
@@ -40,12 +51,18 @@
 
     #responsiveNav ul li a,
     #responsiveNav ul li span {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         background: var(--black-color);
         color: var(--white-color);
         padding: 15px 15px 15px 25px;
         border-bottom: 1px solid grey;
+        -webkit-transition: 0.5s all ease;
+        -o-transition: 0.5s all ease;
         transition: 0.5s all ease;
     }
 
@@ -65,16 +82,24 @@
         display: inline-block;
         margin-left: 3px;
         color: var(--red-color);
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
+        -o-transition: transform 0.3s ease;
         transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
     }
 
     #responsiveNav .dropdown.open span i {
-        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
     }
 
     #responsiveNav .subNavigation {
         max-height: 0;
         overflow: hidden;
+        -webkit-transition: max-height 0.5s ease;
+        -o-transition: max-height 0.5s ease;
         transition: max-height 0.5s ease;
     }
 
@@ -114,7 +139,8 @@
     #bestServices .contentWrapper .container:nth-child(2) {
         height: 400px;
         width: 400px;
-        box-shadow: 5px 5px lightgrey;
+        -webkit-box-shadow: 5px 5px lightgrey;
+                box-shadow: 5px 5px lightgrey;
         border: 2px solid red;
     }
 
@@ -126,7 +152,9 @@
         gap: 0;
         position: static;
         top: 0;
-        transform: none;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
     }
 
     #bestServices .projectWrap {
@@ -140,7 +168,9 @@
 
     #serviceList .box {
         width: auto;
-        flex: 1 1 35%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 35%;
+                flex: 1 1 35%;
     }
 
     #serviceList .box h5 {
@@ -154,7 +184,8 @@
     #solution .container {
         max-width: 100%;
         margin: auto;
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     #solution .box {
@@ -171,7 +202,8 @@
     }
 
     #growth .container {
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     #growth .column {
@@ -183,7 +215,9 @@
     }
 
     #growth .chartContainer {
-        justify-content: end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
     }
 
     #strategy .container {
@@ -200,8 +234,12 @@
     }
 
     #testimonials .container {
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         gap: 0;
         height: -webkit-fill-available;
         padding: 50px 50px;
@@ -210,14 +248,22 @@
 
     #testimonials #mileStone {
         width: 100%;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         gap: 20px;
     }
 
     #showcaseSlider .sliderLink {
-        flex: 0 0 32.3%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 32.3%;
+                flex: 0 0 32.3%;
     }
 
     #news .blogTitle {
@@ -296,7 +342,9 @@
     }
 
     #showcaseSlider .sliderLink {
-        flex: 0 0 49%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 49%;
+                flex: 0 0 49%;
     }
 
     #testimonials {
@@ -313,8 +361,13 @@
 
     footer .contact {
         gap: 20px;
-        flex-direction: column-reverse;
-        align-items: end;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: end;
     }
 
     footer .contact p {
@@ -322,8 +375,11 @@
     }
 
     footer .container {
-        justify-content: space-between;
-        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
 
     footer .column.one {
@@ -331,7 +387,9 @@
     }
 
     footer li.checkbox {
-        align-items: baseline;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
     }
 
     footer .checkbox a {
@@ -421,7 +479,9 @@
     }
 
     #serviceList .box {
-        flex: 1 1 100%;
+        -webkit-box-flex: 1;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
     }
 
     #serviceList .box h5 {
@@ -434,6 +494,8 @@
     }
 
     #discover .container {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         padding: 30px 0;
     }
@@ -477,8 +539,11 @@
     }
 
     #growth .chartContainer {
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         margin-top: 30px;
     }
 
@@ -491,6 +556,8 @@
     }
 
     #strategy {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
         height: fit-content;
         padding: 50px 0;
     }
@@ -536,7 +603,9 @@
     }
 
     #showcaseSlider .sliderLink {
-        flex: 0 0 100.1%;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100.1%;
+                flex: 0 0 100.1%;
     }
 
     #showcaseSlider .box .post {
@@ -557,9 +626,14 @@
     }
 
     footer .footerHead {
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
         gap: 25px;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     footer .contact {
@@ -577,7 +651,9 @@
 
 @media (max-width: 400px) {
     #mainSlider .content p {
-        align-items: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
     }
 
     #bestServices h1 {
