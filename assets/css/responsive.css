@@ -203,7 +203,7 @@
         flex-wrap: wrap;
         flex-direction: column-reverse;
         gap: 0;
-        height: -webkit-fill-available;
+        height: auto;
         padding: 50px 50px;
         margin-top: 20px;
     }
@@ -619,4 +619,5 @@
         width: 100%;
     }
 }
+
 
