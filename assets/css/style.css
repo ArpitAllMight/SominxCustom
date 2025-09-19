@@ -520,7 +520,7 @@ header .subNav li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: -webkit-fill-available;
+    height: auto;
     width: 528px;
     display: flex;
     align-items: end;
@@ -1955,3 +1955,4 @@ footer .footerBottom {
     color: var(--red-color);
     border-radius: 50%;
 }
+
